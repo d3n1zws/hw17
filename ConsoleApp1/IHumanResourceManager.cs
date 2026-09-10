@@ -1,10 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ConsoleApp1
+﻿namespace ConsoleApp1
 {
-    internal class IHumanResourceManager
+    internal interface IHumanResourceManager
     {
+        void AddDepartment(Department department);
+        void AddEmployee(Employee employee);
+        void EditDepartments(string name1, string name2);
+        void EditEmployee(string no, int salary, string position);
+        void GetDepartment();
+        void RemoveEmployee(Employee employee, string departmentName);
+        void Search(string s);
     }
 }
